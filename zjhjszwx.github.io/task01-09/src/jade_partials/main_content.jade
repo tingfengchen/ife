@@ -1,0 +1,240 @@
+- var test = '购买材料一', n = 0;
+
+div#main_content
+	div.top_bar
+		a.title(href='javascript: void(0)') 0站
+		ul
+			li
+				a(href='javascript: void(0)') 个人报表
+			li
+				a(href='javascript: void(0)') 文件一
+			li
+				a(href='javascript: void(0)') 文档一
+	div.content
+		section.section1
+			div.check
+				label 查询项
+				select
+					option 第一项
+					option 第二项
+					option 第三项
+			div.people
+				div.buy
+					label 买方
+					select
+						option 小A
+						option 小B
+						option 小C
+				div.sell
+					label 卖方
+					select
+						option 小A
+						option 小B
+						option 小C
+			div.details
+				div.time
+					label 日期
+					input(type='text',value='2016-04-01')
+				div.total_time
+					label 总耗时
+					select
+						option 8天
+						option 9天
+						option 10天
+				div.total_people
+					label 人数
+					select
+						option 10人
+						option 11人
+						option 12人
+				div.success
+					label 成交项
+					select
+						option 10项
+						option 11项
+						option 12项
+			div.search
+				input(type='submit',value='搜索')
+		section.section2
+			div.cards
+				a.left.fa.fa-caret-left
+				ul
+					li.active
+						span.time 10:00 
+							span am
+						span.money.fa.fa-rmb 1200
+					li
+						span.time 10:00 
+							span am
+						span.money.fa.fa-rmb 1300
+					li
+						span.time 12:00 
+							span am
+						span.money.fa.fa-rmb 1200
+					li
+						span.time 01:00 
+							span pm
+						span.money.fa.fa-rmb 1400
+					li
+						span.time 02:00 
+							span pm
+						span.money.fa.fa-rmb 1500
+					li
+						span.time 03:00 
+							span pm
+						span.money.fa.fa-rmb 1800
+
+				a.left.fa.fa-caret-right
+			div.history
+				a.fa.fa-calendar 历史查询
+		section.section3
+			label 2016年4月份统计
+			div.cards
+				div.card
+					p 133311
+					p 成交量
+					div.color
+				div.card
+					p 133311
+					p 成交量
+					div.color
+				div.card
+					p 133311
+					p 成交量
+					div.color
+				div.card
+					p 133311
+					p 成交量
+					div.color
+		
+		section.section4
+			div.project_tab
+				label 第一组项目
+				div.tab
+					ul
+						li.active
+							a(href='javascript: void(0)') 项目一
+						li
+							a(href='javascript: void(0)') 项目一
+						li
+							a(href='javascript: void(0)') 项目一
+						li
+							a(href='javascript: void(0)') 项目一
+						li
+							a(href='javascript: void(0)') 项目一
+				div.content
+					table
+						while n < 7
+							- var k = 0
+							tr
+								while k < 5
+									td= test
+									- k++
+							- n++
+			div.project_detail
+				label 第一组项目
+				div.content
+					div.title
+						label 标题
+						input(type='text',value='项目报表三')
+					div.price
+						label 价格
+						p.fa.fa-rmb
+							input(type='text',value='158')
+					div.response
+						label 负责人
+						input(type='text',value='小A')
+					div.describe
+						label 详细描述
+						textarea 该项目目前负责人是......
+		section.section5
+			div.calendar
+				label 日历
+				div.content
+					div.options
+						-var years = 2016, months = 12;
+						select.years
+							while years > 1960
+								option #{years--}年
+						select.months
+							while months > 0
+								option #{months--}月
+						select.pin
+							option 标注日期
+							option 标注日期
+						input(type='button',value='返回今天')
+					div.weeks
+						ul
+							li 一
+							li 二
+							li 三
+							li 四
+							li 五
+							li 六
+							li 日
+					div.days
+						- var a = 1;
+						ul
+							li
+							li
+							li
+							li
+							while a <=3
+								li= a++
+						- var a = 4;
+						ul
+							while a <=10
+								li= a++
+						- var a = 11;
+						ul
+							while a <=17
+								li= a++
+						- var a = 18;
+						ul
+							while a <=24
+								li= a++
+						- var a = 25;
+						ul
+							while a <=30
+								li= a++
+							li 
+			div.top
+				label 汽车行业排行榜
+				div.content
+					table
+						tr
+							th 排名
+							th 品牌
+							th 搜索指数
+						tr
+							td 1
+							td 大众
+							td 4892914
+								span
+						tr
+							td 1
+							td 大众
+							td 4892914
+								span
+						tr
+							td 1
+							td 大众
+							td 4892914
+								span
+						tr
+							td 1
+							td 大众
+							td 4892914
+								span
+						tr
+							td 1
+							td 大众
+							td 4892914
+								span
+						tr
+							td 1
+							td 大众
+							td 4892914
+								span
+						
+

@@ -1,0 +1,630 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  height: 100%;
+  min-width: 1320px;
+}
+html,
+body {
+  position: relative;
+  width: 100%;
+}
+body {
+  height: 100%;
+  position: relative;
+  padding-left: 260px;
+  padding-top: 53px;
+  overflow: hidden;
+}
+header {
+  width: 100%;
+  height: 53px;
+  background-color: #2189bf;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+header .header_logo {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  width: 100px;
+  left: 50px;
+}
+header .header_right {
+  height: 100%;
+  position: absolute;
+  right: 80px;
+  width: 370px;
+  line-height: 53px;
+}
+header .header_right .header_search_area {
+  height: 25px;
+  background-color: #fff;
+  border-radius: 25px;
+  width: 300px;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  white-space: nowrap;
+}
+header .header_right .header_search_area .header_search_btn {
+  display: inline-block;
+  height: 100%;
+  width: 25px;
+  overflow: hidden;
+  line-height: 25px;
+  text-align: center;
+  float: left;
+}
+header .header_right .header_search_area .header_search_btn i {
+  color: #ddd;
+  font-size: 1.4rem;
+}
+header .header_right .header_search_area input {
+  width: 265px;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 1.4rem;
+  overflow: hidden;
+  float: left;
+}
+header .header_right .header_sign_in {
+  font-size: 1.2rem;
+  color: #fff;
+  float: right;
+  text-decoration: none;
+}
+header .header_right .header_sign_in i {
+  vertical-align: middle;
+  font-size: 2rem;
+  margin-right: 6px;
+}
+nav#left_nav {
+  position: absolute;
+  top: 53px;
+  left: 0;
+  width: 260px;
+  height: 100%;
+  background-color: #2a2e3d;
+}
+nav#left_nav div.nav_top {
+  width: 100%;
+  height: 150px;
+  padding-top: 15px;
+}
+nav#left_nav div.nav_top div.nav_head {
+  height: 80px;
+  width: 100%;
+  line-height: 80px;
+  margin-bottom: 15px;
+}
+nav#left_nav div.nav_top div.nav_head img {
+  margin: 0 20px;
+  height: 80px;
+  width: 80px;
+  vertical-align: middle;
+}
+nav#left_nav div.nav_top div.nav_head span.nav_username {
+  color: #ddd;
+  vertical-align: middle;
+  font-size: 1.4rem;
+}
+nav#left_nav div.nav_top div.nav_user_info {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+}
+nav#left_nav div.nav_top div.nav_user_info div.nav_user_fans,
+nav#left_nav div.nav_top div.nav_user_info div.nav_user_collection {
+  width: 50%;
+  float: left;
+}
+nav#left_nav div.nav_top div.nav_user_info div.nav_user_fans p,
+nav#left_nav div.nav_top div.nav_user_info div.nav_user_collection p {
+  color: #666;
+  font-size: 1.4rem;
+}
+nav#left_nav div.nav_top div.nav_user_info div.nav_user_fans p:first-child,
+nav#left_nav div.nav_top div.nav_user_info div.nav_user_collection p:first-child {
+  font-size: 1.8rem;
+}
+nav#left_nav div.nav_lists {
+  margin-top: 20px;
+}
+nav#left_nav div.nav_lists ul {
+  display: inline-block;
+  padding-left: 15px;
+  width: 100%;
+}
+nav#left_nav div.nav_lists ul li {
+  list-style: none;
+  display: inline-block;
+  width: 100%;
+  padding-left: 2rem;
+}
+nav#left_nav div.nav_lists ul li a {
+  text-decoration: none;
+  color: #ddd;
+  font-size: 1.6rem;
+  height: 32px;
+  display: inline-block;
+}
+nav#left_nav div.nav_lists ul li a:before {
+  position: relative;
+  left: -1rem;
+}
+nav#left_nav div.nav_lists ul li a:hover {
+  color: #fff;
+}
+#main_content {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: #eeeeed;
+  position: relative;
+  padding: 50px 60px 0 60px;
+}
+#main_content .top_bar {
+  width: 100%;
+  height: 32px;
+  line-height: 32px;
+  background: #fff;
+  padding-left: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#main_content .top_bar a {
+  text-decoration: none;
+  float: left;
+  color: #918A8A;
+  margin-left: 10px;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+#main_content .top_bar ul li {
+  list-style: none;
+  display: inline-block;
+  float: left;
+}
+#main_content .top_bar ul li a:before {
+  content: '/';
+  position: relative;
+  left: -3px;
+}
+#main_content .content {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+#main_content .content section.section1 {
+  padding: 10px 20px;
+  height: 80px;
+  background-color: #fff;
+}
+#main_content .content section.section1 > div {
+  float: left;
+}
+#main_content .content section.section1 label {
+  font-size: 1.4rem;
+  margin-right: 10px;
+  color: #8B8787;
+}
+#main_content .content section.section1 .check {
+  width: 200px;
+  height: 100%;
+}
+#main_content .content section.section1 .people {
+  width: 200px;
+  height: 100%;
+}
+#main_content .content section.section1 .people > div {
+  height: 50%;
+  width: 100%;
+}
+#main_content .content section.section1 .details {
+  width: 380px;
+  height: 100%;
+}
+#main_content .content section.section1 .details > div {
+  float: left;
+  height: 50%;
+  margin-right: 10px;
+}
+#main_content .content section.section1 .search {
+  height: 100%;
+  width: 100px;
+  line-height: 60px;
+  text-align: center;
+}
+#main_content .content section.section1 .search input {
+  width: 60px;
+  height: 32px;
+  border: none;
+  background-color: #388ac1;
+  color: #fff;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+#main_content .content section.section1 .search input:hover {
+  background-color: #499bd2;
+}
+#main_content .content section.section2 {
+  height: 80px;
+  margin: 10px 0;
+  display: flex;
+}
+#main_content .content section.section2 .cards {
+  width: 752px;
+  height: 100%;
+  float: left;
+  display: flex;
+  flex: 4;
+}
+#main_content .content section.section2 .cards > a {
+  display: inline-block;
+  height: 100%;
+  width: 40px;
+  line-height: 80px;
+  float: left;
+  background-color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  flex: 1;
+}
+#main_content .content section.section2 .cards ul {
+  display: flex;
+  height: 100%;
+  width: auto;
+  float: left;
+  flex: 20;
+}
+#main_content .content section.section2 .cards ul li {
+  display: inline-block;
+  width: 100px;
+  background-color: #fff;
+  margin: 0 6px;
+  flex: 1;
+}
+#main_content .content section.section2 .cards ul li.active {
+  position: relative;
+}
+#main_content .content section.section2 .cards ul li.active:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #388ac1;
+}
+#main_content .content section.section2 .cards ul li span.time {
+  display: block;
+  width: 100%;
+  text-align: center;
+  height: 50%;
+  font-size: 1.3rem;
+  line-height: 40px;
+}
+#main_content .content section.section2 .cards ul li span.time span {
+  font-size: 8.rem;
+}
+#main_content .content section.section2 .cards ul li span.money {
+  display: block;
+  width: 100%;
+  height: 50%;
+  text-align: center;
+  color: #FF9800;
+  font-size: 2rem;
+}
+#main_content .content section.section2 .cards ul li span.money:before {
+  color: #918A8A;
+  font-size: 1.2rem;
+  vertical-align: middle;
+}
+#main_content .content section.section2 .history {
+  width: 200px;
+  height: 100%;
+  float: left;
+  background-color: #fff;
+  margin-left: 10px;
+  flex: 1;
+  text-align: center;
+  line-height: 80px;
+}
+#main_content .content section.section2 .history a {
+  font-size: 1.4rem;
+}
+#main_content .content section.section2 .history a:before {
+  font-size: 4rem;
+  color: #388ac1;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+#main_content .content section.section3 {
+  height: 100px;
+  margin-top: 15px;
+}
+#main_content .content section.section3 label {
+  font-size: 1.4rem;
+}
+#main_content .content section.section3 .cards {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin-top: 4px;
+}
+#main_content .content section.section3 .cards .card {
+  flex: 1;
+  height: 80%;
+  background-color: #fff;
+  position: relative;
+}
+#main_content .content section.section3 .cards .card:not(:last-child) {
+  margin-right: 40px;
+}
+#main_content .content section.section3 .cards .card:before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  width: 6px;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+#main_content .content section.section3 .cards .card:nth-child(1):before,
+#main_content .content section.section3 .cards .card:nth-child(1) div.color {
+  background-color: #43b29e;
+}
+#main_content .content section.section3 .cards .card:nth-child(2):before,
+#main_content .content section.section3 .cards .card:nth-child(2) div.color {
+  background-color: #388ac1;
+}
+#main_content .content section.section3 .cards .card:nth-child(3):before,
+#main_content .content section.section3 .cards .card:nth-child(3) div.color {
+  background-color: #d04a36;
+}
+#main_content .content section.section3 .cards .card:nth-child(4):before,
+#main_content .content section.section3 .cards .card:nth-child(4) div.color {
+  background-color: #e2cd46;
+}
+#main_content .content section.section3 .cards .card p {
+  text-indent: 2rem;
+  color: #918A8A;
+}
+#main_content .content section.section3 .cards .card p:first-child {
+  line-height: 50px;
+  font-size: 1.4rem;
+  color: #000;
+}
+#main_content .content section.section3 .cards .card div.color {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#main_content .content section.section4,
+#main_content .content section.section5 {
+  height: auto;
+  width: 100%;
+  display: flex;
+  margin-top: 15px;
+}
+#main_content .content section.section4 > div,
+#main_content .content section.section5 > div {
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+}
+#main_content .content section.section4 > div > label,
+#main_content .content section.section5 > div > label {
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 10px;
+  background-color: #f4f5f6;
+  color: #bbb;
+  font-size: 1.4rem;
+}
+#main_content .content section.section4 .project_tab {
+  flex: 5;
+  margin-right: 15px;
+  position: relative;
+}
+#main_content .content section.section4 .project_tab .tab {
+  width: 90%;
+  height: 30px;
+  margin-top: 10px;
+  padding: 0 15px;
+}
+#main_content .content section.section4 .project_tab .tab ul {
+  display: flex;
+  width: 100%;
+}
+#main_content .content section.section4 .project_tab .tab ul li {
+  display: inline-block;
+  flex: 1;
+  margin-right: 4px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #ddd;
+}
+#main_content .content section.section4 .project_tab .tab ul li.active {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-bottom: 1px solid #fff;
+}
+#main_content .content section.section4 .project_tab .content {
+  margin: 0 15px;
+  border: 1px solid #ddd;
+  position: relative;
+  top: -1px;
+  padding: 20px;
+  width: auto;
+}
+#main_content .content section.section4 .project_tab .content table {
+  width: 100%;
+}
+#main_content .content section.section4 .project_tab .content table tr td {
+  height: 22px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+#main_content .content section.section4 .project_detail {
+  flex: 4;
+}
+#main_content .content section.section4 .project_detail .content {
+  width: 100%;
+  padding: 15px;
+}
+#main_content .content section.section4 .project_detail .content > div {
+  float: left;
+}
+#main_content .content section.section4 .project_detail .content > div input {
+  border-width: 0 0 1px 0;
+  border-bottom: 1px solod #ddd;
+  padding: 3px;
+  outline: none;
+  width: 100%;
+}
+#main_content .content section.section4 .project_detail .content > div p input {
+  width: auto;
+}
+#main_content .content section.section4 .project_detail .content > div label {
+  display: inline-block;
+  width: 100%;
+  height: 22px;
+  line-height: 22px;
+  color: #ddd;
+}
+#main_content .content section.section4 .project_detail .content > div textarea {
+  width: 100%;
+  height: auto;
+  border: none;
+  outline: none;
+  padding: 3px;
+  resize: none;
+  height: 100%;
+}
+#main_content .content section.section4 .project_detail .content .title {
+  width: 100%;
+}
+#main_content .content section.section4 .project_detail .content .price {
+  width: 30%;
+  margin-right: 5%;
+}
+#main_content .content section.section4 .project_detail .content .response {
+  width: 65%;
+}
+#main_content .content section.section4 .project_detail .content .describe {
+  width: 100%;
+  height: 160px;
+}
+#main_content .content section.section5 .calendar {
+  flex: 4;
+  margin-right: 15px;
+}
+#main_content .content section.section5 .calendar .content {
+  width: 100%;
+  padding: 15px;
+}
+#main_content .content section.section5 .calendar .content .options {
+  width: 100%;
+  display: flex;
+}
+#main_content .content section.section5 .calendar .content .options select,
+#main_content .content section.section5 .calendar .content .options input {
+  flex: 1;
+  margin: 0 10px;
+}
+#main_content .content section.section5 .calendar .content .weeks {
+  width: 100%;
+  margin-top: 10px;
+}
+#main_content .content section.section5 .calendar .content .weeks ul {
+  display: inline-block;
+  display: flex;
+  width: 100%;
+  border-top: 1px solid #00f;
+  border-bottom: 1px solid #ddd;
+}
+#main_content .content section.section5 .calendar .content .weeks ul li {
+  display: inline-block;
+  list-style: none;
+  flex: 1;
+  text-align: center;
+  height: 32px;
+  line-height: 32px;
+}
+#main_content .content section.section5 .calendar .content .days {
+  width: 100%;
+}
+#main_content .content section.section5 .calendar .content .days ul {
+  display: inline-block;
+  display: flex;
+  width: 100%;
+}
+#main_content .content section.section5 .calendar .content .days ul li {
+  display: inline-block;
+  list-style: none;
+  flex: 1;
+  text-align: center;
+  height: 32px;
+  line-height: 32px;
+}
+#main_content .content section.section5 .top {
+  flex: 5;
+}
+#main_content .content section.section5 .top .content {
+  width: 100%;
+  padding: 10px 15px;
+}
+#main_content .content section.section5 .top .content table {
+  width: 100%;
+}
+#main_content .content section.section5 .top .content table tr td,
+#main_content .content section.section5 .top .content table tr th {
+  border: 1px solid #ddd;
+}
+#main_content .content section.section5 .top .content table tr th {
+  font-size: 1.8rem;
+  height: 38px;
+}
+#main_content .content section.section5 .top .content table tr td {
+  font-size: 1.4rem;
+  text-align: center;
+  height: 32px;
+}
+#main_content .content section.section5 .top .content table tr td span {
+  display: inline-block;
+  width: 300px;
+  background-color: #ddd;
+  height: 8px;
+  position: relative;
+  border-radius: 8px;
+  margin-left: 10px;
+}
+#main_content .content section.section5 .top .content table tr td span:before {
+  content: '';
+  display: inline-block;
+  height: 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  background-color: #0f0;
+  border-radius: 8px;
+}
