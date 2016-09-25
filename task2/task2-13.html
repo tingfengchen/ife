@@ -14,33 +14,23 @@
 <script type="text/javascript">
 
 (function() {
-  /*	
+  /*  
   在注释下方写下代码
   给按钮button绑定一个点击事件
   在事件处理函数中
   获取aqi-input输入的值，并显示在aqi-display中
   */
-  var airInput=document.getElementById("aqi-input");
-  var button=document.getElementById("button"); 
-  var airDisplay=document.getElementById("aqi-display");
-  
-    button.onclick=function(){
-      if(airInput.value){
-        airDisplay.innerHTML=airInput.value;
+    var i=document.getElementById("aqi-input");
+    var j=document.getElementById("button");
+    var k=document.getElementById("aqi-display");
+    j.onclick=function(){
+      if(i.value){
+        k.innerHTML=i.value;
       }
       else{
-        alert("请输入北京今天空气质量");
+        alert("请输入北京今天空气质量：")
       }
     }
-  /*button.addEventListner("click",function(){
-    var i=airInput.value;
-      if(i==""){
-        alert("请输入北京今天空气质量")；
-      }
-      else{
-        airDisplay.innerText=i;
-      }
-    })*/
 })();
 
 </script>
